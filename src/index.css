@@ -1,19 +1,37 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-#root{
+/* App.css */
+
+.board {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
+  justify-content: center;
+  height: 100svh;
 }
 
-.square{
-  padding: 1rem;
-  font-weight: 900;
-  font-size: 1.5rem;
-  /* border: 2px solid black; */
+.row {
+  display: flex;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 1px solid #000;
+  font-size: 4rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: #f0f0f0;
 }
