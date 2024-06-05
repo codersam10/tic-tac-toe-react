@@ -4,14 +4,25 @@
   box-sizing: border-box;
 }
 
-/* App.css */
+li{
+  list-style: none;
+}
 
-.board {
+.game{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100svh;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper{
+  display: flex;
+  gap: 3rem;
+  height: 60vh;
+}
+
+.game-info{
+  padding-top: 1.5rem;
 }
 
 .row {
